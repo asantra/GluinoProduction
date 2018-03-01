@@ -68,7 +68,6 @@ if '4L4' in runArgs.jobConfig[0].split('_')[-1]:
     
 elif '2L4' in runArgs.jobConfig[0].split('_')[-1]:
   evgenLog.info('2lepton4 filter is applied')
-  
   include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
   filtSeq.MultiElecMuTauFilter.NLeptons  = 2
   filtSeq.MultiElecMuTauFilter.MinPt = 4000.         # pt-cut on the lepton
@@ -76,6 +75,12 @@ elif '2L4' in runArgs.jobConfig[0].split('_')[-1]:
   filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 0    # don't include hadronic taus
   filtSeq.Expression = "MultiElecMuTauFilter"
   
+  include("MC15JobOptions/MissingEtFilter.py")
+  filtSeq.MissingEtFilter.METCut = 50*GeV
+  filtSeq.Expression = "MissingEtFilter"
+  
+  
+  '''
   if masses['1000022'] >= 600 :
     evt_multiplier = 100
   elif masses['1000022'] >= 200 :
@@ -84,6 +89,7 @@ elif '2L4' in runArgs.jobConfig[0].split('_')[-1]:
     evt_multiplier = 210
   else:
     evt_multiplier = 250
+  '''
 
     
 elif '2L8' in runArgs.jobConfig[0].split('_')[-1]:
@@ -135,6 +141,39 @@ elif '4LT4' in runArgs.jobConfig[0].split('_')[-1]:
     evt_multiplier = 120
   else:
     evt_multiplier = 100  
+
+  minevents=2000     # only do 2k events at once in prod system
+  
+  
+elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
+  evgenLog.info('2leptontau4 filter is applied')
+  
+  include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
+  filtSeq.MultiElecMuTauFilter.NLeptons  = 2
+  filtSeq.MultiElecMuTauFilter.MinPt = 4000.         # pt-cut on the lepton
+  filtSeq.MultiElecMuTauFilter.MinVisPtHadTau = 15000.   # pt-cut on the hadronic taus
+  filtSeq.MultiElecMuTauFilter.MaxEta = 2.8          # stay away from MS 2.7 just in case
+  filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 1    # include hadronic taus
+  filtSeq.Expression = "MultiElecMuTauFilter"
+  
+  include("MC15JobOptions/MissingEtFilter.py")
+  filtSeq.MissingEtFilter.METCut = 50*GeV
+  filtSeq.Expression = "MissingEtFilter"
+
+  '''
+  if masses['1000022'] >= 500 :
+    evt_multiplier = 40
+  elif masses['1000022'] >= 400 :
+    evt_multiplier = 45
+  elif masses['1000022'] >= 300 :
+    evt_multiplier = 50
+  elif masses['1000022'] >= 200 :
+    evt_multiplier = 80
+  elif masses['1000022'] >= 130 :
+    evt_multiplier = 120
+  else:
+    evt_multiplier = 100  
+  '''
 
   minevents=2000     # only do 2k events at once in prod system
     
