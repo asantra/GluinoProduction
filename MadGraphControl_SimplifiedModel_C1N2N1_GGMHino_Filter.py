@@ -146,7 +146,7 @@ elif '4LT4' in runArgs.jobConfig[0].split('_')[-1]:
   
   
 elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
-  evgenLog.info('2leptontau4 filter is applied')
+  evgenLog.info('2leptonMET50 filter is applied')
   
   include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
   filtSeq.MultiElecMuTauFilter.NLeptons  = 2
@@ -154,11 +154,11 @@ elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
   filtSeq.MultiElecMuTauFilter.MinVisPtHadTau = 15000.   # pt-cut on the hadronic taus
   filtSeq.MultiElecMuTauFilter.MaxEta = 2.8          # stay away from MS 2.7 just in case
   filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 1    # include hadronic taus
-  filtSeq.Expression = "MultiElecMuTauFilter"
   
   include("MC15JobOptions/MissingEtFilter.py")
   filtSeq.MissingEtFilter.METCut = 50*GeV
-  filtSeq.Expression = "MissingEtFilter"
+  
+  filtSeq.Expression = "MultiElecMuTauFilter and MissingEtFilter"
 
   '''
   if masses['1000022'] >= 500 :
