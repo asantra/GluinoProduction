@@ -174,6 +174,7 @@ elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
   else:
     evt_multiplier = 100  
   '''
+  
 
   minevents=2000     # only do 2k events at once in prod system
     
@@ -193,10 +194,13 @@ elif '2G15' in runArgs.jobConfig[0].split('_')[-1]:
 include ( 'MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py' )
 
 if njets>0:
+    genSeq.Pythia8.Commands += [ "Merging:Process = guess" ] ### new guess option which will guess the hard quarks
+    
+    
+    ######### old method ############
     #genSeq.Pythia8.Commands += [ "Merging:Process = pp>{x1+,1000024}{x1-,-1000024}{n1,1000022}{n2,1000023}",
                                  #"1000024:spinType = 1",
                                  #"1000022:spinType = 1",
                                  #"1000023:spinType = 1" ]
-    genSeq.Pythia8.Commands += [ "Merging:Process = guess" ] ### new guess option which will guess the hard quarks
 
 
