@@ -146,7 +146,12 @@ elif '4LT4' in runArgs.jobConfig[0].split('_')[-1]:
   
   
 elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
+  
   evgenLog.info('2leptonMET50 filter is applied')
+  print "========================"
+  print "Arka ControlFile working"
+  print runArgs.jobConfig[0].split('_')[-1]
+  print "========================"
   
   include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
   filtSeq.MultiElecMuTauFilter.NLeptons  = 2
@@ -158,8 +163,10 @@ elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
   include("MC15JobOptions/MissingEtFilter.py")
   filtSeq.MissingEtFilter.METCut = 50*GeV
   
-  filtSeq.Expression = "MultiElecMuTauFilter and MissingEtFilter"
+  filtSeq.Expression = "(MultiElecMuTauFilter) and (MissingEtFilter)"
+  #filtSeq.Expression = "MultiElecMuTauFilter"
 
+  #evt_multiplier = 2
   '''
   if masses['1000022'] >= 500 :
     evt_multiplier = 40
@@ -173,10 +180,10 @@ elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
     evt_multiplier = 120
   else:
     evt_multiplier = 100  
-  '''
   
+  '''
 
-  minevents=2000     # only do 2k events at once in prod system
+  #minevents=2000     # only do 2k events at once in prod system
     
 elif '2G15' in runArgs.jobConfig[0].split('_')[-1]:
   evgenLog.info('2photon15 filter is applied')
