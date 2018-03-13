@@ -147,17 +147,25 @@ runArgs.decaytype = decaytype
 runArgs.gentype = gentype
 
 # Pythia8 setup
+
+print "============================"
+print "============================"
+print "Arka PostIncludeFile working"
+print "============================"
+print "============================"
   
 genSeq.Pythia8.Commands += ["Init:showAllParticleData = on",
                             "Next:numberShowLHA = 10",
                             "Next:numberShowEvent = 10",
                             ]
 
-#if "UserHooks" in genSeq.Pythia8.__slots__.keys():
-  #genSeq.Pythia8.UserHooks += ['JetMergingaMCatNLO']
-#else:
-  #genSeq.Pythia8.UserHook = 'JetMergingaMCatNLO'
+
+if "UserHooks" in genSeq.Pythia8.__slots__.keys():
+  genSeq.Pythia8.UserHooks += ['JetMergingaMCatNLO']
+else:
+  genSeq.Pythia8.UserHook = 'JetMergingaMCatNLO'
   
+
   
 if njets>0:
     genSeq.Pythia8.Commands += ["Merging:mayRemoveDecayProducts = on",
