@@ -1,0 +1,65 @@
+---------------------
+jobOptions and release:
+---------------------
+- jobOptions = 
+ MadGraphControl_SimplifiedModel_C1N2N1_GGMHino_Filter.py
+ MadGraphControl_SimplifiedModelPreInclude.py
+ Pythia8_A14_NNPDF23LO_EvtGen_Common.py
+ Pythia8_A14_NNPDF23LO_Common.py
+ Pythia8_Base_Fragment.py
+ Pythia8_RapidityOrderMPI.py
+ Pythia8_EvtGen.py
+ EvtGen_Fragment.py
+ Pythia8_MadGraph.py
+ Pythia8_LHEF.py
+ MultiElecMuTauFilter.py
+ MissingEtFilter.py
+ MadGraphControl_SimplifiedModelPostInclude.py
+ MC15.395398.MGPy8EG_A14N23LO_C1N2N1_GGMHinoZh50_150_2LT4.py ERROR <-- jobOptions not found in SVN!
+- using release =  AtlasProduction-19.2.5.29
+
+---------------------
+Generate params:
+---------------------
+- minevents =  2000
+
+---------------------
+Metadata:
+---------------------
+- keywords =  susy, neutralino, chargino, gravitino
+- generatorTune =  A14 NNPDF23LO
+- specialConfig =  NONE
+- genFilterNames =  MultiElecMuTauFilter, MissingEtFilter
+- contactPhysicist =  santra.arka@gmail.com
+- GenFiltEff =  1.035421e-01
+- generatorName =  MadGraph+Pythia8+EvtGen
+- cross-section (nb) =  4.408e-03
+- physicsComment =  ~hino pair production, decay to gravitino simplified model, m_C1N2  -151.0 GeV, m_N1  150.0 GeV
+---------------------
+MISSING Metadata:
+INFO: weights is missing
+INFO: generator is missing
+INFO: PDF is missing
+
+---------------------
+Performance metrics:
+---------------------
+- CPU =  0.67 hrs
+- Virtual memory =  877.336 Mb
+
+---------------------
+Event tests:
+---------------------
+- CountHepMC Events passing all checks and written =  1217  <-- ERROR: Not an acceptable number of events for production
+- EvgenFilterSeq Weighted Filter Efficiency =  0.103542 [1304.070812 / 12594.594596]
+- EvgenFilterSeq Filter Efficiency =  0.102389 [1217 / 11886]
+- TestHepMC Events passed =  11886, Events Failed  1
+- TestHepMC Efficiency =  99.9916%
+- SimTimeEstimate RUN INFORMATION =  Processed 1217 events and found 5.35258e+09 of energy to be processed.
+
+
+---------------------
+Incomplete tests:
+ ERROR: --Ntotal (-N) flag is not used - total number of events not given - impossible to calculated effective lumi.
+
+
