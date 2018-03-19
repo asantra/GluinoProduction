@@ -166,7 +166,7 @@ elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
   filtSeq.Expression = "(MultiElecMuTauFilter) and (MissingEtFilter)"
   #filtSeq.Expression = "MultiElecMuTauFilter"
 
-  #evt_multiplier = 2
+  evt_multiplier = 10
   '''
   if masses['1000022'] >= 500 :
     evt_multiplier = 40
@@ -202,17 +202,18 @@ include ( 'MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py' )
 
 if njets>0:
     #### new guess option for pythia ########
-    #genSeq.Pythia8.Commands += [ "Merging:Process = guess" ] ### new guess option which will guess the hard quarks
-    #if "UserHooks" in genSeq.Pythia8.__slots__.keys():
-        #genSeq.Pythia8.UserHooks += ['JetMergingaMCatNLO']
-    #else:
-        #genSeq.Pythia8.UserHook = 'JetMergingaMCatNLO'
+    genSeq.Pythia8.Commands += [ "Merging:Process = guess" ] ### new guess option which will guess the hard quarks
+    
+    if "UserHooks" in genSeq.Pythia8.__slots__.keys():
+        genSeq.Pythia8.UserHooks += ['JetMergingaMCatNLO']
+    else:
+        genSeq.Pythia8.UserHook = 'JetMergingaMCatNLO'
     
     ######## old method ############
-    genSeq.Pythia8.Commands += [ "Merging:Process = pp>{x1+,1000024}{x1-,-1000024}{n1,1000022}{n2,1000023}",
-                                 "1000024:spinType = 1",
-                                 "1000022:spinType = 1",
-                                 "1000023:spinType = 1" ]
+    #genSeq.Pythia8.Commands += [ "Merging:Process = pp>{x1+,1000024}{x1-,-1000024}{n1,1000022}{n2,1000023}",
+                                 #"1000024:spinType = 1",
+                                 #"1000022:spinType = 1",
+                                 #"1000023:spinType = 1" ]
                                  
 keepOutput=True
 
