@@ -1,4 +1,5 @@
 include ( 'MC15JobOptions/MadGraphControl_SimplifiedModelPreInclude.py' ) 
+#### done by Arka, second time
 
 def StringToFloat(s):
   if "p" in s:
@@ -39,7 +40,7 @@ add process p p > n1 n2 j j / susystrong @3
 njets = 1
 evgenLog.info('Registered generation of ~hino pair production, decay to gravitino; grid point '+str(runArgs.runNumber)+' decoded into mass point ' + str(masses['1000024']) + ' ' + str(masses['1000022']))
 
-evgenConfig.contact = [ "santra.arka@gmail.com" ]
+evgenConfig.contact += [ "santra.arka@gmail.com" ]
 evgenConfig.keywords += ['SUSY', 'chargino', 'neutralino', 'gravitino']
 evgenConfig.description = '~hino pair production, decay to gravitino simplified model, m_C1N2 = %s GeV, m_N1 = %s GeV'%(masses['1000023'],masses['1000022'])
 
@@ -64,32 +65,6 @@ if '4L4' in runArgs.jobConfig[0].split('_')[-1]:
     evt_multiplier = 210
   else:
     evt_multiplier = 250
-    
-    
-elif '2L4' in runArgs.jobConfig[0].split('_')[-1]:
-  evgenLog.info('2lepton4 filter is applied')
-  include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
-  filtSeq.MultiElecMuTauFilter.NLeptons  = 2
-  filtSeq.MultiElecMuTauFilter.MinPt = 4000.         # pt-cut on the lepton
-  filtSeq.MultiElecMuTauFilter.MaxEta = 2.8          # stay away from MS 2.7 just in case
-  filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 0    # don't include hadronic taus
-  filtSeq.Expression = "MultiElecMuTauFilter"
-  
-  include("MC15JobOptions/MissingEtFilter.py")
-  filtSeq.MissingEtFilter.METCut = 50*GeV
-  filtSeq.Expression = "MissingEtFilter"
-  
-  
-  '''
-  if masses['1000022'] >= 600 :
-    evt_multiplier = 100
-  elif masses['1000022'] >= 200 :
-    evt_multiplier = 170
-  elif masses['1000022'] >= 130 :
-    evt_multiplier = 210
-  else:
-    evt_multiplier = 250
-  '''
 
     
 elif '2L8' in runArgs.jobConfig[0].split('_')[-1]:
@@ -145,45 +120,41 @@ elif '4LT4' in runArgs.jobConfig[0].split('_')[-1]:
   minevents=2000     # only do 2k events at once in prod system
   
   
+#### the code snippet needed for GMSB Higgsino NLSP signal point ####
+
 elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
   
   evgenLog.info('2leptonMET50 filter is applied')
-  print "========================"
-  print "Arka ControlFile working"
+  
+  print "==================================="
+  print "Arka ControlFile working April 16 2018"
   print runArgs.jobConfig[0].split('_')[-1]
-  print "========================"
+  print "==================================="
   
   include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
-  filtSeq.MultiElecMuTauFilter.NLeptons  = 2
-  filtSeq.MultiElecMuTauFilter.MinPt = 4000.         # pt-cut on the lepton
-  filtSeq.MultiElecMuTauFilter.MinVisPtHadTau = 15000.   # pt-cut on the hadronic taus
+  filtSeq.MultiElecMuTauFilter.NLeptons  = 2         # need 2 leptons
+  filtSeq.MultiElecMuTauFilter.MinPt = 3000.         # pt-cut on the lepton
+  #filtSeq.MultiElecMuTauFilter.MinVisPtHadTau = 15000.   # pt-cut on the hadronic taus
   filtSeq.MultiElecMuTauFilter.MaxEta = 2.8          # stay away from MS 2.7 just in case
-  filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 1    # include hadronic taus
+  filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 0    # do not include hadronic taus
   
   include("MC15JobOptions/MissingEtFilter.py")
-  filtSeq.MissingEtFilter.METCut = 50*GeV
+  filtSeq.MissingEtFilter.METCut = 50*GeV            # MET > 50 GeV
   
   filtSeq.Expression = "(MultiElecMuTauFilter) and (MissingEtFilter)"
-  #filtSeq.Expression = "MultiElecMuTauFilter"
 
-  evt_multiplier = 10
-  '''
-  if masses['1000022'] >= 500 :
-    evt_multiplier = 40
-  elif masses['1000022'] >= 400 :
-    evt_multiplier = 45
-  elif masses['1000022'] >= 300 :
-    evt_multiplier = 50
-  elif masses['1000022'] >= 200 :
-    evt_multiplier = 80
-  elif masses['1000022'] >= 130 :
-    evt_multiplier = 120
-  else:
-    evt_multiplier = 100  
   
-  '''
-
-  #minevents=2000     # only do 2k events at once in prod system
+  if masses['1000022'] >= 900   :
+    evt_multiplier = 12
+  elif masses['1000022'] >= 600 :
+    evt_multiplier = 35
+  elif masses['1000022'] >= 300 :
+    evt_multiplier = 70
+  elif masses['1000022'] >= 150 :
+    evt_multiplier = 1
+  else:
+    evt_multiplier = 1
+  
     
 elif '2G15' in runArgs.jobConfig[0].split('_')[-1]:
   evgenLog.info('2photon15 filter is applied')
@@ -195,25 +166,17 @@ elif '2G15' in runArgs.jobConfig[0].split('_')[-1]:
   filtSeq.Expression = "DirectPhotonFilter"
   
   evt_multiplier = 50
-  #evt_multiplier = 300
 
 
 include ( 'MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py' )
 
 if njets>0:
-    #### new guess option for pythia ########
-    genSeq.Pythia8.Commands += [ "Merging:Process = guess" ] ### new guess option which will guess the hard quarks
+    genSeq.Pythia8.Commands += [ "Merging:Process = guess" ]
     
+    ### needed to use "guess" option of Pythia.
     if "UserHooks" in genSeq.Pythia8.__slots__.keys():
         genSeq.Pythia8.UserHooks += ['JetMergingaMCatNLO']
     else:
         genSeq.Pythia8.UserHook = 'JetMergingaMCatNLO'
-    
-    ######## old method ############
-    #genSeq.Pythia8.Commands += [ "Merging:Process = pp>{x1+,1000024}{x1-,-1000024}{n1,1000022}{n2,1000023}",
-                                 #"1000024:spinType = 1",
-                                 #"1000022:spinType = 1",
-                                 #"1000023:spinType = 1" ]
                                  
-keepOutput=True
 
