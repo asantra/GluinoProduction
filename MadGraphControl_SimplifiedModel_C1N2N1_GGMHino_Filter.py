@@ -46,6 +46,10 @@ evgenConfig.description = '~hino pair production, decay to gravitino simplified 
 
 # Filter and event multiplier 
 evt_multiplier = 3
+### this is added to explicitly turn off systematic variations + push in the proper event_norm setting, this is to check the bug
+
+extras['event_norm']='sum'
+extras['use_syst']='F'
 
 if '4L4' in runArgs.jobConfig[0].split('_')[-1]:
   evgenLog.info('4lepton4 filter is applied')
@@ -148,9 +152,6 @@ elif '2L3' in runArgs.jobConfig[0].split('_')[-1]:
     evt_multiplier = 233
   else:
     evt_multiplier = 10
-    
-  extras['event_norm']='sum'
-  extras['use_syst']='F'
   
     
 elif '2G15' in runArgs.jobConfig[0].split('_')[-1]:
