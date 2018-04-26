@@ -122,19 +122,13 @@ elif '4LT4' in runArgs.jobConfig[0].split('_')[-1]:
   
 #### the code snippet needed for GMSB Higgsino NLSP signal point ####
 
-elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
+elif '2L3' in runArgs.jobConfig[0].split('_')[-1]:
   
   evgenLog.info('2leptonMET50 filter is applied')
-  
-  print "==================================="
-  print "Arka ControlFile working April 16 2018"
-  print runArgs.jobConfig[0].split('_')[-1]
-  print "==================================="
   
   include ( 'MC15JobOptions/MultiElecMuTauFilter.py' )
   filtSeq.MultiElecMuTauFilter.NLeptons  = 2         # need 2 leptons
   filtSeq.MultiElecMuTauFilter.MinPt = 3000.         # pt-cut on the lepton
-  #filtSeq.MultiElecMuTauFilter.MinVisPtHadTau = 15000.   # pt-cut on the hadronic taus
   filtSeq.MultiElecMuTauFilter.MaxEta = 2.8          # stay away from MS 2.7 just in case
   filtSeq.MultiElecMuTauFilter.IncludeHadTaus = 0    # do not include hadronic taus
   
@@ -145,15 +139,18 @@ elif '2LT4' in runArgs.jobConfig[0].split('_')[-1]:
 
   
   if masses['1000022'] >= 900   :
-    evt_multiplier = 12
+    evt_multiplier = 20
   elif masses['1000022'] >= 600 :
-    evt_multiplier = 35
+    evt_multiplier = 22
   elif masses['1000022'] >= 300 :
-    evt_multiplier = 70
+    evt_multiplier = 28
   elif masses['1000022'] >= 150 :
-    evt_multiplier = 1
+    evt_multiplier = 233
   else:
-    evt_multiplier = 1
+    evt_multiplier = 10
+    
+  extras['event_norm']='sum'
+  extras['use_syst']='F'
   
     
 elif '2G15' in runArgs.jobConfig[0].split('_')[-1]:

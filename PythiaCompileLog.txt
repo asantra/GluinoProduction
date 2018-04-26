@@ -1,0 +1,199 @@
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> (Makefile.header) Rebuilding ../x86_64-slc6-gcc47-opt/x86_64-slc6-gcc47-opt.make
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> (constituents.make) Rebuilding library links
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> (constituents.make) Building Pythia8_iLib.make
+#CMT---> (constituents.make) Building check_install_joboptions.make
+#CMT---> (constituents.make) Building checkreq.make
+#CMT---> (constituents.make) Building install_root_include_path.make
+#CMT---> (constituents.make) Building install_includes.make
+#CMT---> Warning: #CMT--->Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*' Warning: 
+Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Info: Document checkreq
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document install_includes
+#CMT---> Info: Library Pythia8_iLib
+#CMT---> Info: Document check_install_joboptions
+#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting install_root_include_path
+#CMT---> (constituents.make) Starting install_includes
+#CMT---> (constituents.make) Starting check_install_joboptions
+#CMT---> (constituents.make) Starting Pythia8_iLib
+Installing files from standard ../Pythia8_i to /afs/cern.ch/user/a/asantra/public/2LProduction/InstallArea/root-include-path
+Files from standard ../Pythia8_i already installed
+#CMT---> (constituents.make) install_root_include_path done
+#CMT---> (constituents.make) install_includes done
+#CMT---> compiling ../src/Pythia8_i.cxx
+#CMT---> compiling ../src/UserHooksFactory.cxx
+#CMT---> compiling ../src/UserProcessFactory.cxx
+#CMT---> compiling ../src/UserProcesses/Sigma2qqbar2emu.cxx
+#CMT---> compiling ../src/UserProcesses/Sigma2qqbar2lStarlBar.cxx
+#CMT---> compiling ../src/UserResonanceFactory.cxx
+#CMT---> compiling ../src/UserProcesses/Sigma2qqbar2lStarlStarBar.cxx
+#CMT---> compiling ../src/UserHooks/GravFlat.cxx
+#CMT---> (constituents.make) check_install_joboptions done
+#CMT---> compiling ../src/UserHooks/JetMatchingMadGraphHook.cxx
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/SigmaProcess.h:28,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/UserHooks.h:16,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/UserHooksFactory.h:4,
+                 from ../src/UserHooks/JetMatchingMadGraphHook.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/JetMatching.h:22,
+                 from ../src/UserHooks/JetMatchingMadGraphHook.cxx:2:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+#CMT---> compiling ../src/UserHooks/JetMergingaMCatNLO.cxx
+#CMT---> compiling ../src/UserHooks/SuppressMPI.cxx
+#CMT---> compiling ../src/UserHooks/EnhanceMPI.cxx
+#CMT---> compiling ../src/UserHooks/WprimeFlat.cxx
+#CMT---> compiling ../src/UserHooks/ZprimeFlatpT.cxx
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/SigmaProcess.h:28,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/UserHooks.h:16,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/UserHooksFactory.h:4,
+                 from ../src/UserHooks/JetMergingaMCatNLO.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/aMCatNLOHooks.h:18,
+                 from ../src/UserHooks/JetMergingaMCatNLO.cxx:2:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+#CMT---> compiling ../src/UserHooks/WprimeWZFlat.cxx
+#CMT---> compiling ../src/UserHooks/mHatReweight.cxx
+#CMT---> compiling ../src/UserHooks/main31.cxx
+#CMT---> compiling ../src/UserHooks/SingleTopWideEta.cxx
+#CMT---> compiling ../src/UserHooks/SettableColourReconnection.cxx
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:18,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/Pythia8_i.h:6,
+                 from ../src/Pythia8_i.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/Pythia8_i.h:6,
+                 from ../src/Pythia8_i.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+
+CHECKREQ---> checkreq SUCCESS
+#CMT---> (constituents.make) checkreq done
+#CMT---> compiling ../src/UserHooks/PowhegBB4L.cxx
+#CMT---> (constituents.make) Building install_joboptions.make
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> compiling ../src/UserResonances/ResonanceExcitedCI.cxx
+#CMT---> Warning: Structuring style used `without_version_directory'. Could not determine version in `../cmt'. Default version `v*'
+#CMT---> Info: Document install_joboptions
+#CMT---> compiling ../src/UserResonances/ResonanceLQ.cxx
+../src/Pythia8_i.cxx: In member function 'virtual StatusCode Pythia8_i::genInitialize()':
+../src/Pythia8_i.cxx:124:29: error: 'class Pythia8::Pythia' has no member named 'addUserHooksPtr'
+../src/Pythia8_i.cxx: In member function 'virtual StatusCode Pythia8_i::fillEvt(HepMC::GenEvent*)':
+../src/Pythia8_i.cxx:439:49: error: 'class Pythia8::Info' has no member named 'nWeights'
+../src/Pythia8_i.cxx:441:76: error: 'class Pythia8::Info' has no member named 'nWeights'
+../src/Pythia8_i.cxx:443:22: error: 'class Pythia8::Info' has no member named 'nWeights'
+../src/Pythia8_i.cxx:445:69: error: no matching function for call to 'Pythia8::Info::weight(int&)'
+../src/Pythia8_i.cxx:445:69: note: candidate is:
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/ParticleData.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Event.h:15,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Analysis.h:17,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:16,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/Pythia8_i.h:6,
+                 from ../src/Pythia8_i.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Info.h:120:10: note: double Pythia8::Info::weight() const
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Info.h:120:10: note:   candidate expects 0 arguments, 1 provided
+../src/Pythia8_i.cxx: In member function 'void Pythia8_i::addLHEToHepMC(HepMC::GenEvent*)':
+../src/Pythia8_i.cxx:518:10: error: expected type-specifier
+../src/Pythia8_i.cxx:518:42: error: expected unqualified-id before '&' token
+../src/Pythia8_i.cxx:518:42: error: expected ')' before '&' token
+../src/Pythia8_i.cxx:518:42: error: expected '{' before '&' token
+../src/Pythia8_i.cxx:518:43: error: 'ignoreIt' was not declared in this scope
+../src/Pythia8_i.cxx:518:51: error: expected ';' before ')' token
+#CMT---> compiling ../src/Pythia8Custom/HllgamRepeatTimeShower.cxx
+#CMT---> (constituents.make) Starting install_joboptions
+gmake[2]: `install_joboptions' is up to date.
+#CMT---> (constituents.make) install_joboptions done
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/SigmaProcess.h:28,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/UserHooks.h:16,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/UserHooksFactory.h:4,
+                 from ../src/UserHooks/SettableColourReconnection.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/ColourReconnectionHooks.h:26,
+                 from ../src/UserHooks/SettableColourReconnection.cxx:2:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/SigmaProcess.h:28,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/UserHooks.h:16,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/UserHooksFactory.h:4,
+                 from ../src/UserHooks/main31.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/PowhegHooks.h:18,
+                 from ../src/UserHooks/main31.cxx:2:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/SigmaProcess.h:28,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/UserHooks.h:16,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/UserHooksFactory.h:4,
+                 from ../src/UserHooks/PowhegBB4L.cxx:7:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/PowhegHooks.h:18,
+                 from ../src/UserHooks/PowhegBB4L.cxx:8:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/system/system_error.hpp:14:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/thread/exceptions.hpp:22,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/thread/pthread/mutex.hpp:12,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/thread/mutex.hpp:16,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/thread/pthread/shared_mutex.hpp:13,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/thread/shared_mutex.hpp:21,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasCore/19.2.5/InstallArea/include/AthContainers/AthContainers/tools/threading.h:101,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasCore/19.2.5/InstallArea/include/AthContainers/AthContainers/AuxVectorData.h:29,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasCore/19.2.5/InstallArea/include/AthContainers/AthContainers/AuxVectorBase.h:15,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasCore/19.2.5/InstallArea/include/AthContainers/AthContainers/DataVector.h:507,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasCore/19.2.5/InstallArea/include/DataModel/DataModel/DataVector.h:10,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasEvent/19.2.5/InstallArea/include/GeneratorObjects/GeneratorObjects/McEventCollection.h:7,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasProduction/19.2.5.29/InstallArea/include/GeneratorModules/GeneratorModules/GenBase.h:13,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/AtlasProduction/19.2.5.29/InstallArea/include/GeneratorModules/GeneratorModules/GenModule.h:4,
+                 from /afs/cern.ch/user/a/asantra/public/2LProduction/Pythia8_i/Pythia8_i/Pythia8_i.h:4,
+                 from ../src/Pythia8_i.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/system/error_code.hpp: At global scope:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/system/error_code.hpp:214:36: warning: 'boost::system::posix_category' defined but not used [-Wunused-variable]
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/system/error_code.hpp:215:36: warning: 'boost::system::errno_ecat' defined but not used [-Wunused-variable]
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt/include/boost-1_53/boost/system/error_code.hpp:216:36: warning: 'boost::system::native_ecat' defined but not used [-Wunused-variable]
+gmake[2]: *** [../x86_64-slc6-gcc47-opt/Pythia8_i.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/BeamParticle.h:15:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:18,
+                 from ../src/Pythia8Custom/HllgamRepeatTimeShower.h:7,
+                 from ../src/Pythia8Custom/HllgamRepeatTimeShower.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/FragmentationFlavZpT.h:93:15: warning: 'virtual int Pythia8::StringFlav::combine(int, int, bool)' was hidden [-Woverloaded-virtual]
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HadronLevel.h:19:0,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/Pythia.h:23,
+                 from ../src/Pythia8Custom/HllgamRepeatTimeShower.h:7,
+                 from ../src/Pythia8Custom/HllgamRepeatTimeShower.cxx:1:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8/HiddenValleyFragmentation.h:45:7: warning:   by 'virtual int Pythia8::HVStringFlav::combine(Pythia8::FlavContainer&, Pythia8::FlavContainer&)' [-Woverloaded-virtual]
+In file included from ../src/UserHooks/SettableColourReconnection.cxx:2:0:
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/ColourReconnectionHooks.h: In member function 'bool Pythia8::TopReconUserHooks::doReconnect(bool, Pythia8::Event&)':
+/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.5/sw/lcg/external/MCGenerators_lcgcmt67c/pythia8/212.pdf6plugin/x86_64-slc6-gcc47-opt/include/Pythia8Plugins/ColourReconnectionHooks.h:924:7: warning: 'dLam' may be used uninitialized in this function [-Wmaybe-uninitialized]
+gmake[1]: *** [Pythia8_iLib] Error 2
+gmake: *** [all] Error 2
+
